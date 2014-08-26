@@ -101,31 +101,27 @@ Taken directly from [here](https://stackoverflow.com/questions/161813/fix-merge-
  git fetch origin 
  git pull origin master 
 ```
-
-> > From ssh://gitosis@example.com:22/projectname
-
->  > branch            master     -> FETCH_HEAD
-
-> > Updating a030c3a..ee25213
-
-> > error: Entry 'filename.c' not uptodate. Cannot merge.
+>>```
+From ssh://gitosis@example.com:22/projectname
+branch            master     -> FETCH_HEAD
+Updating a030c3a..ee25213
+error: Entry 'filename.c' not uptodate. Cannot merge.
+```
 
 > So you get up-to-date and try again, but have a conflict:
 > 
-> ``` bash
-> git add filename.c  
-> git commit -m "made some wild and crazy changes" 
-> git pull origin master 
+``` bash
+ git add filename.c  
+ git commit -m "made some wild and crazy changes" 
+ git pull origin master 
 > ```
-> > From ssh://gitosis@example.com:22/projectname
-
-> >  branch            master     -> FETCH_HEAD
-
-> > Auto-merging filename.c
-
-> > CONFLICT (content): Merge conflict in filename.c
-
-> > Automatic merge failed; fix conflicts and then commit the result.
+>>```
+From ssh://gitosis@example.com:22/projectname
+branch            master     -> FETCH_HEAD
+Auto-merging filename.c
+CONFLICT (content): Merge conflict in filename.c
+Automatic merge failed; fix conflicts and then commit the result.
+```
 
 > So you decide to take a look at the changes:
 
@@ -142,12 +138,11 @@ Taken directly from [here](https://stackoverflow.com/questions/161813/fix-merge-
 > And then we try a final time
 
 > ` git pull origin master `
-
-> > From ssh://gitosis@example.com:22/projectname
-
-> >  branch            master     -> FETCH_HEAD
-
-> > Already up-to-date.
+>>``` 
+From ssh://gitosis@example.com:22/projectname
+branch            master     -> FETCH_HEAD
+Already up-to-date.
+```
 
 > Ta-da!
 ## A list of resources 
