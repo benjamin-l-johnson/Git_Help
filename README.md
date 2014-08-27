@@ -44,7 +44,7 @@ Since we are working on a project together I have to first, create a git reposit
 * I begin to add my files ` touch FastSimulatedAnnealing.c ` and ` vim  NPsolver.c ` after a few hours of work I save everything. 
 
 
-Now to stage my repo I do a ` git add -A ` the ` -A ` is for add all files. If I follow it up with a ` git commit -m "solved the traveling salesman problem rewrere in polynomial time" ` this will commit all my changes and leave the message I specified after the ` -m `.
+Now to stage my repo I do a ` git add -A ` the ` -A ` is for add all files. If I follow it up with a ` git commit -m "solved the traveling salesman problem rewrote in polynomial time" ` this will commit all my changes and leave the message I specified after the ` -m `.
 
  
 ### Adding a remote
